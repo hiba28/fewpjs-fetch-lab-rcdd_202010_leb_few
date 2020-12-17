@@ -7,11 +7,11 @@ function renderBooks(books){
     let booksName = document.createElement('h3')
     booksName.innerHTML = book.name
     main.appendChild(booksName)
-    let data = document.getElementById('specific-data')
-    let h3 = document.createElement('h3')
-    h3.innerHTML = `the Third book from this serie is ${book[2]}`
-    data.appendChild(h3)
   })
+  let data = document.getElementById('specific-data')
+  let h3 = document.createElement('h3')
+  h3.innerHTML = `the Third book from this serie is ${book[2]}`
+  data.appendChild(h3)
 }
 document.addEventListener('DOMContentLoaded',() => {
   fetchBooks()
