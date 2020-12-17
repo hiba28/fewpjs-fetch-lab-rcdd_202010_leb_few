@@ -26,7 +26,7 @@ function renderCharactersNumb(character){
     characterNb.innerHTML = `the 1031st character is ${character.characters[1031]}`
     data.appendChild(characterNb)
   })
-  
+
 }
 document.addEventListener('DOMContentLoaded',() => {
   fetchBooks()
