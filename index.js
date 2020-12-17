@@ -22,7 +22,7 @@ function fetchCharacter(){
   return fetch('https://anapioficeandfire.com/api/characters').then(resp => resp.json()).then(data => renderCharactersNumb(data))
 }
 function renderCharactersNumb(book){
-  
+
 }
 document.addEventListener('DOMContentLoaded',() => {
   fetchBooks()
