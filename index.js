@@ -10,7 +10,7 @@ function renderBooks(books){
   })
   let data = document.getElementById('specific-data')
   let h3 = document.createElement('h3')
-  h3.innerHTML = `the Third book from this serie is ${book[2]}`
+  h3.innerHTML = `the Third book from this serie is ${books[2]}`
   data.appendChild(h3)
 }
 document.addEventListener('DOMContentLoaded',() => {
