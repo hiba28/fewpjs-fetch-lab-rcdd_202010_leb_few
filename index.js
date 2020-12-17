@@ -9,6 +9,7 @@ function renderBooks(books){
     main.appendChild(h2)
     let h3 = document.createElement('h3')
     h3.innerHTML = `the Third book from this serie is ${book[2]}`
+    main.appendChild(h3)
   })
 }
 document.addEventListener('DOMContentLoaded',() => {
