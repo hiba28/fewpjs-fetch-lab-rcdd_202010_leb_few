@@ -22,7 +22,7 @@ function renderCharactersNumb(character){
   // let thirdBook = document.createElement('h3')
   // thirdBook.innerHTML = `the Third book from this serie is ${books[2].name}`
   // data.appendChild(thirdBook)
-  characters.forEach(char => {
+  character.forEach(char => {
     let characterNb = document.createElement('h3')
     characterNb.innerHTML = `the 1031st character is ${character[1031].name}`
     data.appendChild(characterNb)
