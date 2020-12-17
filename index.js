@@ -12,7 +12,9 @@ function renderBooks(books){
 }
 
 function fetchCharacter(){
-  return fetch('https://anapioficeandfire.com/api/characters').then(resp => resp.json()).then(data => renderCharactersNumb(data))
+  return fetch('https://anapioficeandfire.com/api/characters').then(resp => resp.json()).then(data => {
+    console.log(data)
+    renderCharactersNumb(data)})
 }
 
 function renderCharactersNumb(character){
