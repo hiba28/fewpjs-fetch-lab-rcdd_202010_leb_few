@@ -9,9 +9,6 @@ function renderBooks(books){
     booksName.innerHTML = book.name
     main.appendChild(booksName)
   })
-  let thirdBook = document.createElement('h3')
-  thirdBook.innerHTML = `the Third book from this serie is ${books[2].name}`
-  data.appendChild(thirdBook)
 }
 
 function fetchCharacter(){
@@ -19,9 +16,16 @@ function fetchCharacter(){
 }
 function renderCharactersNumb(book){
   let data = document.getElementById('specific-data')
+
+  let thirdBook = document.createElement('h3')
+  thirdBook.innerHTML = `the Third book from this serie is ${books[2].name}`
+  data.appendChild(thirdBook)
+  
   let characterNb = document.createElement('h3')
   characterNb.innerHTML = `the 1031st character is ${book[1].characters[1031]}`
   data.appendChild(characterNb)
+
+  
 }
 document.addEventListener('DOMContentLoaded',() => {
   fetchBooks()
