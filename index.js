@@ -11,7 +11,7 @@ function renderBooks(books){
     main.appendChild(booksName)
 
     let characterNb = document.createElement('h3')
-    characterNb.innerHTML = `the 1031st character is ${book.characters[1031]}`
+    characterNb.innerHTML = `the 1031st character is ${renderCharactersNumb(book)}`
     data.appendChild(characterNb)
   })
   let thirdBook = document.createElement('h3')
