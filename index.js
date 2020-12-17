@@ -14,7 +14,7 @@ function renderBooks(books){
   data.appendChild(thirdBook)
 
   let characterNb = document.createElement('h3')
-  characterNb.innerHTML = `the 1031st character is ${books.characters[1031]}`
+  characterNb.innerHTML = `the 1031st character is ${books[2].characters[1031]}`
   data.appendChild(characterNb)
 }
 document.addEventListener('DOMContentLoaded',() => {
