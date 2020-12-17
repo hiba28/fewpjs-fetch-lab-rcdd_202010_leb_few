@@ -4,7 +4,7 @@ function fetchBooks(){
 function renderBooks(books){
   let main = document.querySelector('main')
   let data = document.getElementById('specific-data')
-  
+
   books.forEach(book => {
     let booksName = document.createElement('h3')
     booksName.innerHTML = book.name
