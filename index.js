@@ -19,7 +19,7 @@ function renderBooks(books){
   data.appendChild(thirdBook)
 }
 function renderCharactersNumb(book){
-  
+
 }
 document.addEventListener('DOMContentLoaded',() => {
   fetchBooks()
