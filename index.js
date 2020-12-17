@@ -18,6 +18,9 @@ function renderBooks(books){
   thirdBook.innerHTML = `the Third book from this serie is ${books[2].name}`
   data.appendChild(thirdBook)
 }
+function renderCharactersNumb(book){
+  
+}
 document.addEventListener('DOMContentLoaded',() => {
   fetchBooks()
 })
