@@ -25,4 +25,5 @@ function renderCharactersNumb(book){
 }
 document.addEventListener('DOMContentLoaded',() => {
   fetchBooks()
+  fetchCharacter()
 })
