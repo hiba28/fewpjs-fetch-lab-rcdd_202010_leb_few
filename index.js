@@ -15,7 +15,7 @@ function renderBooks(books){
 
   let characterNb = document.createElement('h3')
   characterNb.innerHTML = `the 1031st character is ${books.characters[1031]}`
-  data.appendChild(characterNb + "hello")
+  data.appendChild(characterNb)
 }
 document.addEventListener('DOMContentLoaded',() => {
   fetchBooks()
