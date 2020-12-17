@@ -3,19 +3,20 @@ function fetchBooks(){
 }
 function renderBooks(books){
   let main = document.querySelector('main')
+  let data = document.getElementById('specific-data')
+  
   books.forEach(book => {
     let booksName = document.createElement('h3')
     booksName.innerHTML = book.name
     main.appendChild(booksName)
+
+    let characterNb = document.createElement('h3')
+    characterNb.innerHTML = `the 1031st character is ${books[2].characters[1031]}`
+    data.appendChild(characterNb)
   })
-  let data = document.getElementById('specific-data')
   let thirdBook = document.createElement('h3')
   thirdBook.innerHTML = `the Third book from this serie is ${books[2].name}`
   data.appendChild(thirdBook)
-
-  let characterNb = document.createElement('h3')
-  characterNb.innerHTML = `the 1031st character is ${books[2].characters[1031]}`
-  data.appendChild(characterNb)
 }
 document.addEventListener('DOMContentLoaded',() => {
   fetchBooks()
